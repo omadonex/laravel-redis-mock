@@ -1,0 +1,32 @@
+{
+    "name": "omadonex/laravel-redis-mock",
+    "description": "This Laravel package provides a Redis mock for your tests",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yuriy Arkhipov",
+            "email": "omadonex@yandex.ru"
+        }
+    ],
+    "require": {
+        "php" : ">=7.1.0",
+        "illuminate/support": "5.5.*",
+        "illuminate/redis": "5.5.*",
+        "predis/predis": "^1.1",
+        "m6web/redis-mock": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omadonex\\LaravelRedisMock\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Omadonex\\LaravelRedisMock\\Providers\\RedisMockServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
